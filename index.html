@@ -64,6 +64,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-githubtips" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/24/githubtips/" class="article-date">
+  <time datetime="2020-10-24T14:15:14.000Z" itemprop="datePublished">2020-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/24/githubtips/">githubtips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##新研究出来得几点</p>
+<p>###1.404页面？<br>出现一个礼拜的404页面，会在setting中提醒为什么会404<br>出现问题：Your site is having problems building: The tag fancybox on line 77 in themes/landscape/README.md is not a recognized Liquid tag.<br>解决方案：删掉readme.md 即可！</p>
+<h3 id="2-为什么上传的东西在博客不更新？"><a href="#2-为什么上传的东西在博客不更新？" class="headerlink" title="2.为什么上传的东西在博客不更新？"></a>2.为什么上传的东西在博客不更新？</h3><p>因为这需要命令行来更新，需要hexo来发布<br>出错原因：一直用herminal终端，配合commit来发布到github的，结果没有经过hexo 所以没效果！<br>解决方案：用hexo工具！ 三步曲</p>
+<p>hexo clean<br>hexo generate<br>(若要本地预览就先执行 hexo server)<br>hexo deploy</p>
+<h3 id="3-如何更改分类？"><a href="#3-如何更改分类？" class="headerlink" title="3.如何更改分类？"></a>3.如何更改分类？</h3><p>的确在G的时候需要设定好<br>另外一种方案？<br>解决方案：利用hexo 命令行的方式，添加tags分类<br>详情：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hankleo/p/11606224.html">https://www.cnblogs.com/hankleo/p/11606224.html</a></p>
+<h3 id="4-尝试修改之前的文章"><a href="#4-尝试修改之前的文章" class="headerlink" title="4.尝试修改之前的文章"></a>4.尝试修改之前的文章</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/10/24/githubtips/" data-id="ckgnrxnup0000hzvi0xvxa4rg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-new-blog1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/24/new-blog1/" class="article-date">
@@ -102,79 +143,25 @@
 
 
   
-    <article id="post-新建一个repository" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/" class="article-date">
-  <time datetime="2020-10-19T12:08:23.083Z" itemprop="datePublished">2020-10-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.删除之前的</p>
-<p>2.重新上传，用pycharm的share就行了</p>
-<p>3.commit</p>
-<p>4.上传</p>
-<p>__</p>
-<p>原来全部需要按照git的命令来。</p>
-<p>搞定了。<br>git add .<br>git commit -m ‘注释’<br>git push</p>
-<p>三步曲<br>一个都不能少</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/" data-id="ckgnrbwem00053dvi76sjba7m" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-404-solved-one-setting" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/19/404-solved-one-setting/" class="article-date">
-  <time datetime="2020-10-19T11:30:09.921Z" itemprop="datePublished">2020-10-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hexo搭建Github博客上传后，网页显示404问题解决方案<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/dajian790626/article/details/78595684">https://blog.csdn.net/dajian790626/article/details/78595684</a></p>
-<p>老肖79 2017-11-21 18:53:08   26325   收藏 8<br>分类专栏： 博客 文章标签： 博客<br>版权<br>问题如标题所示，“hexo上传博客后，网页始终显示404，无法刷新网页”。奋战几天查各种资料后问题终于得到解决，我感觉很有必要记录一下解决过程和解决方案，网页无法打开的原因真的很让人很无语。<br>先说一下我的github的账号是laoxiao79，然后我创建的仓库名称为mobiledeveloper，本地文件夹为mobiledeveloper.github.io，主要参照了<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/380290deb8f0%E8%BF%99%E7%AF%87%E5%8D%9A%E6%96%87%E5%BB%BA%E7%AB%8B%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%96%87%E7%AB%A0%E6%80%BB%E7%BB%93%E7%9A%84%E5%BE%88%E8%AF%A6%E7%BB%86%EF%BC%8C%E4%B9%9F%E5%BE%88%E5%88%B0%E4%BD%8D%E3%80%82%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90%E5%B9%B6%E5%B0%86%E5%85%B6%E5%90%8C%E6%AD%A5%E5%88%B0%E7%BD%91%E4%B8%8A%E5%90%8E%EF%BC%8C%E9%A1%B5%E9%9D%A2%E5%B0%B1%E6%98%AF%E5%88%B7%E6%96%B0%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%8C%E6%80%BB%E6%98%AF%E6%98%BE%E7%A4%BA404%E3%80%82">http://www.jianshu.com/p/380290deb8f0这篇博文建立的博客，文章总结的很详细，也很到位。搭建完成并将其同步到网上后，页面就是刷新不出来，总是显示404。</a><br>于是开始查找原因，首先百度，搜狗一通搜索，参考了各种方法，都无济于事。最后看到404页面有如下提示：</p>
-<p>博客网址中必须使用你github的用户名，即，我的用户名为andyisless，那么网址必须为andyisless.github.io，这样才可以。<br>但是我想到刚刚费死劲创建了本地目录mobiledeveloper.github.io，并经过九九八十一难才将其上传成功 ，难道还有重新来一遍不成？这样岂不要人命了。<br>后来看到了一个很简单的方法（目前还不知道有没有后遗症），于是果断使用，修改后，网页果然正常了，我阴沉了几天的心终于晴天了。哈哈。<br>方法如下图所示，</p>
-<p>这里写图片描述<br>将andyisless重命名成andyisless.github.io即可。<br>怎么样，没想到吧？还没有解决方案的同学可以按上述步骤试试，也许有惊喜！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/19/404-solved-one-setting/" data-id="ckgnrbwe100003dvi3z7y00up" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-push rejected" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/19/push%20rejected/" class="article-date">
-  <time datetime="2020-10-19T11:13:14.513Z" itemprop="datePublished">2020-10-19</time>
+    <a href="/2020/10/24/push%20rejected/" class="article-date">
+  <time datetime="2020-10-24T14:05:36.000Z" itemprop="datePublished">2020-10-24</time>
 </a>
     
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/24/push%20rejected/">push rejected</a>
+    </h1>
+  
+
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -215,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/19/push%20rejected/" data-id="ckgnrbwek00043dviasizbj4l" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/24/push%20rejected/" data-id="ckgnrbwek00043dviasizbj4l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -225,10 +212,10 @@
 
 
   
-    <article id="post-First-go" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-新建一个repository" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/19/First-go/" class="article-date">
-  <time datetime="2020-10-19T10:15:08.000Z" itemprop="datePublished">2020-10-19</time>
+    <a href="/2020/10/24/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/" class="article-date">
+  <time datetime="2020-10-24T14:05:36.000Z" itemprop="datePublished">2020-10-24</time>
 </a>
     
   </div>
@@ -239,7 +226,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/19/First-go/">First go</a>
+      <a class="article-title" href="/2020/10/24/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">只能通过commit 上传到git？</a>
     </h1>
   
 
@@ -247,12 +234,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>设么抖没有<br>看什么好看啊。就喜欢自己的。</p>
+        <p>1.删除之前的</p>
+<p>2.重新上传，用pycharm的share就行了</p>
+<p>3.commit</p>
+<p>4.上传</p>
+<p>__</p>
+<p>原来全部需要按照git的命令来。</p>
+<p>搞定了。<br>git add .<br>git commit -m ‘注释’<br>git push</p>
+<p>三步曲<br>一个都不能少</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/19/First-go/" data-id="ckgnrbwed00013dvi3lk67e2t" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/24/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/" data-id="ckgnrbwem00053dvi76sjba7m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-404-solved-one-setting" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/19/404-solved-one-setting/" class="article-date">
+  <time datetime="2020-10-19T11:30:09.921Z" itemprop="datePublished">2020-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>hexo搭建Github博客上传后，网页显示404问题解决方案<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/dajian790626/article/details/78595684">https://blog.csdn.net/dajian790626/article/details/78595684</a></p>
+<p>老肖79 2017-11-21 18:53:08   26325   收藏 8<br>分类专栏： 博客 文章标签： 博客<br>版权<br>问题如标题所示，“hexo上传博客后，网页始终显示404，无法刷新网页”。奋战几天查各种资料后问题终于得到解决，我感觉很有必要记录一下解决过程和解决方案，网页无法打开的原因真的很让人很无语。<br>先说一下我的github的账号是laoxiao79，然后我创建的仓库名称为mobiledeveloper，本地文件夹为mobiledeveloper.github.io，主要参照了<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/380290deb8f0%E8%BF%99%E7%AF%87%E5%8D%9A%E6%96%87%E5%BB%BA%E7%AB%8B%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%96%87%E7%AB%A0%E6%80%BB%E7%BB%93%E7%9A%84%E5%BE%88%E8%AF%A6%E7%BB%86%EF%BC%8C%E4%B9%9F%E5%BE%88%E5%88%B0%E4%BD%8D%E3%80%82%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90%E5%B9%B6%E5%B0%86%E5%85%B6%E5%90%8C%E6%AD%A5%E5%88%B0%E7%BD%91%E4%B8%8A%E5%90%8E%EF%BC%8C%E9%A1%B5%E9%9D%A2%E5%B0%B1%E6%98%AF%E5%88%B7%E6%96%B0%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%8C%E6%80%BB%E6%98%AF%E6%98%BE%E7%A4%BA404%E3%80%82">http://www.jianshu.com/p/380290deb8f0这篇博文建立的博客，文章总结的很详细，也很到位。搭建完成并将其同步到网上后，页面就是刷新不出来，总是显示404。</a><br>于是开始查找原因，首先百度，搜狗一通搜索，参考了各种方法，都无济于事。最后看到404页面有如下提示：</p>
+<p>博客网址中必须使用你github的用户名，即，我的用户名为andyisless，那么网址必须为andyisless.github.io，这样才可以。<br>但是我想到刚刚费死劲创建了本地目录mobiledeveloper.github.io，并经过九九八十一难才将其上传成功 ，难道还有重新来一遍不成？这样岂不要人命了。<br>后来看到了一个很简单的方法（目前还不知道有没有后遗症），于是果断使用，修改后，网页果然正常了，我阴沉了几天的心终于晴天了。哈哈。<br>方法如下图所示，</p>
+<p>这里写图片描述<br>将andyisless重命名成andyisless.github.io即可。<br>怎么样，没想到吧？还没有解决方案的同学可以按上述步骤试试，也许有惊喜！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/10/19/404-solved-one-setting/" data-id="ckgnrbwe100003dvi3z7y00up" class="article-share-link">Share</a>
       
       
     </footer>
@@ -342,23 +366,23 @@
       <ul>
         
           <li>
+            <a href="/2020/10/24/githubtips/">githubtips</a>
+          </li>
+        
+          <li>
             <a href="/2020/10/24/new-blog1/">new blog1</a>
           </li>
         
           <li>
-            <a href="/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">(no title)</a>
+            <a href="/2020/10/24/push%20rejected/">push rejected</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/24/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">只能通过commit 上传到git？</a>
           </li>
         
           <li>
             <a href="/2020/10/19/404-solved-one-setting/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/19/push%20rejected/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/19/First-go/">First go</a>
           </li>
         
       </ul>

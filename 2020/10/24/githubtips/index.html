@@ -5,17 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>githubtips | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.删除之前的 2.重新上传，用pycharm的share就行了 3.commit 4.上传 __ 原来全部需要按照git的命令来。 搞定了。git add .git commit -m ‘注释’git push 三步曲一个都不能少">
+  <meta name="description" content="##新研究出来得几点 ###1.404页面？出现一个礼拜的404页面，会在setting中提醒为什么会404出现问题：Your site is having problems building: The tag fancybox on line 77 in themes&#x2F;landscape&#x2F;README.md is not a recognized Liquid tag.解决方案：删掉readme">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/index.html">
+<meta property="og:title" content="githubtips">
+<meta property="og:url" content="http://example.com/2020/10/24/githubtips/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.删除之前的 2.重新上传，用pycharm的share就行了 3.commit 4.上传 __ 原来全部需要按照git的命令来。 搞定了。git add .git commit -m ‘注释’git push 三步曲一个都不能少">
+<meta property="og:description" content="##新研究出来得几点 ###1.404页面？出现一个礼拜的404页面，会在setting中提醒为什么会404出现问题：Your site is having problems building: The tag fancybox on line 77 in themes&#x2F;landscape&#x2F;README.md is not a recognized Liquid tag.解决方案：删掉readme">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-19T12:08:23.083Z">
-<meta property="article:modified_time" content="2020-10-19T12:54:24.420Z">
+<meta property="article:published_time" content="2020-10-24T14:15:14.000Z">
+<meta property="article:modified_time" content="2020-10-24T14:23:55.802Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -66,31 +66,38 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-新建一个repository" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-githubtips" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/" class="article-date">
-  <time datetime="2020-10-19T12:08:23.083Z" itemprop="datePublished">2020-10-19</time>
+    <a href="/2020/10/24/githubtips/" class="article-date">
+  <time datetime="2020-10-24T14:15:14.000Z" itemprop="datePublished">2020-10-24</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      githubtips
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.删除之前的</p>
-<p>2.重新上传，用pycharm的share就行了</p>
-<p>3.commit</p>
-<p>4.上传</p>
-<p>__</p>
-<p>原来全部需要按照git的命令来。</p>
-<p>搞定了。<br>git add .<br>git commit -m ‘注释’<br>git push</p>
-<p>三步曲<br>一个都不能少</p>
-
+        <p>##新研究出来得几点</p>
+<p>###1.404页面？<br>出现一个礼拜的404页面，会在setting中提醒为什么会404<br>出现问题：Your site is having problems building: The tag fancybox on line 77 in themes/landscape/README.md is not a recognized Liquid tag.<br>解决方案：删掉readme.md 即可！</p>
+<h3 id="2-为什么上传的东西在博客不更新？"><a href="#2-为什么上传的东西在博客不更新？" class="headerlink" title="2.为什么上传的东西在博客不更新？"></a>2.为什么上传的东西在博客不更新？</h3><p>因为这需要命令行来更新，需要hexo来发布<br>出错原因：一直用herminal终端，配合commit来发布到github的，结果没有经过hexo 所以没效果！<br>解决方案：用hexo工具！ 三步曲</p>
+<p>hexo clean<br>hexo generate<br>(若要本地预览就先执行 hexo server)<br>hexo deploy</p>
+<h3 id="3-如何更改分类？"><a href="#3-如何更改分类？" class="headerlink" title="3.如何更改分类？"></a>3.如何更改分类？</h3><p>的确在G的时候需要设定好<br>另外一种方案？<br>解决方案：利用hexo 命令行的方式，添加tags分类<br>详情：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hankleo/p/11606224.html">https://www.cnblogs.com/hankleo/p/11606224.html</a></p>
+<h3 id="4-尝试修改之前的文章"><a href="#4-尝试修改之前的文章" class="headerlink" title="4.尝试修改之前的文章"></a>4.尝试修改之前的文章</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/" data-id="ckgnrbwem00053dvi76sjba7m" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/24/githubtips/" data-id="ckgnrxnup0000hzvi0xvxa4rg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -99,19 +106,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/10/24/new-blog1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          new blog1
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/10/19/404-solved-one-setting/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/10/24/new-blog1/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">new blog1</div>
     </a>
   
 </nav>
@@ -148,23 +146,23 @@
       <ul>
         
           <li>
+            <a href="/2020/10/24/githubtips/">githubtips</a>
+          </li>
+        
+          <li>
             <a href="/2020/10/24/new-blog1/">new blog1</a>
           </li>
         
           <li>
-            <a href="/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">(no title)</a>
+            <a href="/2020/10/24/push%20rejected/">push rejected</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/24/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">只能通过commit 上传到git？</a>
           </li>
         
           <li>
             <a href="/2020/10/19/404-solved-one-setting/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/19/push%20rejected/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/19/First-go/">First go</a>
           </li>
         
       </ul>

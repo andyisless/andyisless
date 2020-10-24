@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="push to origin&#x2F;master was rejected错误解决方案 4.搞定了，上传没问题。 辰一更 2017-12-16 17:21:00   102501   收藏 41分类专栏： 问题方案版权idea中，发布项目到OSChina的Git中，当时按照这样的流程添加Git，然后push，提示：push to origin&#x2F;master war rejected”。 大概原因是：初始">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2020/10/19/push%20rejected/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="push to origin&#x2F;master was rejected错误解决方案 4.搞定了，上传没问题。 辰一更 2017-12-16 17:21:00   102501   收藏 41分类专栏： 问题方案版权idea中，发布项目到OSChina的Git中，当时按照这样的流程添加Git，然后push，提示：push to origin&#x2F;master war rejected”。 大概原因是：初始">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-19T11:13:14.513Z">
+<meta property="article:modified_time" content="2020-10-19T11:25:36.692Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-push rejected" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/19/push%20rejected/" class="article-date">
+  <time datetime="2020-10-19T11:13:14.513Z" itemprop="datePublished">2020-10-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>push to origin/master was rejected错误解决方案</p>
+<p>4.搞定了，上传没问题。</p>
+<p>辰一更 2017-12-16 17:21:00   102501   收藏 41<br>分类专栏： 问题方案<br>版权<br>idea中，发布项目到OSChina的Git中，当时按照这样的流程添加Git，然后push，提示：push to origin/master war rejected”。</p>
+<p>大概原因是：初始化项目时，远程仓库我建了README.md文件，而本地仓库与远程仓库尚未进行文件关联，因此需要将两个仓库的文件进行关联后提交。</p>
+<p>解决方案如下：</p>
+<p>1.切换到自己项目所在的目录，右键选择GIT BASH Here，Idea中可使用Alt+F12</p>
+<p>2.在terminl窗口中依次输入命令：</p>
+<p>git pull</p>
+<p>git pull origin master</p>
+<p>git pull origin master –allow-unrelated-histories</p>
+<p>3.在idea中重新push自己的项目，成功！！！</p>
+<p>注：有部分朋友如果没有成功的话，请删除自己本地项目下.git的隐藏目录，重新尝试关联项目推送即可！</p>
+<p>强行上传！</p>
+<p>还是失败，另外几种方法——————<br>——————————————————————————————————</p>
+<p>关于git提交代码报错:Push to origin/master was rejected</p>
+<p>北房有佳人 2018-12-07 09:28:29   117844   收藏 64<br>分类专栏： 日常bug 文章标签： git push<br>版权<br>经过一段惊心动魄的战斗之后，终于将代码改成了自己想要的样子了，此时，万事俱备只欠东风。只需要将代码git push提交一下，就能下班了，约妹子吃饭，逛街啦，美滋滋。想想还有点小激动呢。</p>
+<p>然而，现实总是残酷的。伟大主义领袖马先生说过。战斗不进行到最后一步的胜利，随时都可能失败。博弈论里也有过“一着不慎满盘皆输”。看着前人无数次惨痛的教训之后，我的push也完美的爆出了一个小bug。o(╥﹏╥)o</p>
+<p>“Push to origin/master was rejected”短小精湛的bug是如此美妙啊。but为毛会报这个bug呢，提交代码也没有错呀，前面提交的时候也没有毛病啊。每当遇到bug的时候，菜鸟的心里总是会回响起无数个声音，“没毛病啊”，“没问题啊”，“完美，简直么得问题啊”，柴犬眉头一皱，发觉事情没有这么简单。一般没问题的bug通常都是个奇行种。不能用一般的思路去解决。</p>
+<p>水深火热的艰苦奋斗以后，Push to origin/master was rejected推到主分支时被拒绝了（阿西吧，主分支也带套路的嘛），问题的原因就是:你莫得感情，也莫得钱，所以被丑拒了。呸! 不对，是因为本地仓库和远程仓库的代码不一样。简单来说就是代码冲突了，复杂来说就是你动了不该动的代码。</p>
+<p>找到了问题所在，接下来就是解决bug的时间了，欢迎收听你的月亮，我的心…</p>
+<p>解决方案No.1</p>
+<p>一般代码冲突的问题，是你在代码里随手敲了个空格，tab，或者脸滚了一下键盘，导致代码中出现了原本不该有的东西。此时，你需要做的就是 Ctrl + z 一直撤销，将代码恢复，注意不要把你自己修改的代码也撤回了。毕竟，脑子是个好东西。</p>
+<p>解决方案No.2</p>
+<p>在git项目对应的目录位置右键打开Git Bash Here（注意项目目录的位置）<br>　　在这里插入图片描述</p>
+<p>在这里插入图片描述<br>　　然后在命令窗输入下面命令：</p>
+<p>git pull origin master –allow-unrelated-histories</p>
+<p>最后出现完成信息，则操作成功！</p>
+<p>再次Push代码，可以成功进行提交！！！</p>
+<p>这句命令的猜想是：允许不相关的历史提交。类似于try</p>
+<p>解决方案 No.3</p>
+<p>最简单粗暴的方法，就是直接将代码重新Clone下来，然后将你修改的代码，重新添加进去，再试着push一下。保证成功解决。</p>
+<p>解决方案 No.4</p>
+<p>最最最最重要的一个方法了，记得检查一下你需要push的项目，嗯，这是一项很重要的任务，如果你push的项目没有git push提交过，或者说 你push的项目跟你以前push过的项目搞混了，此时你就已经达到了超凡入圣的境界，“无招胜有招”。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/10/19/push%20rejected/" data-id="ckgnrbwek00043dviasizbj4l" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/10/19/404-solved-one-setting/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/19/First-go/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">First go</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/24/new-blog1/">new blog1</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/19/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/19/404-solved-one-setting/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/19/push%20rejected/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/19/First-go/">First go</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

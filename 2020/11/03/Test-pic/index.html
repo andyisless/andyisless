@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Markdown 基础语法 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#Markdown 基本语法 ##Markdown语法与Markdown编辑器 Markdown是一种标记语法，这种标记语法需要使用相应的Markdown渲染器（或称为Markdown解析器或Markdown编译器）将Markdown源文件渲染成最终可读的效果（ 类似浏览器引擎将HTML源文件渲染成网页 ）。 Markdown编辑器就是可以输入Markdown源文件并有相应的Markdown渲染器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 基础语法">
+<meta property="og:url" content="http://example.com/2020/11/03/Test-pic/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#Markdown 基本语法 ##Markdown语法与Markdown编辑器 Markdown是一种标记语法，这种标记语法需要使用相应的Markdown渲染器（或称为Markdown解析器或Markdown编译器）将Markdown源文件渲染成最终可读的效果（ 类似浏览器引擎将HTML源文件渲染成网页 ）。 Markdown编辑器就是可以输入Markdown源文件并有相应的Markdown渲染器">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2020/11/03/Test-pic/SEO.png">
+<meta property="og:image" content="http://example.com/2020/11/03/Test-pic/image-url">
+<meta property="article:published_time" content="2020-11-03T09:54:02.000Z">
+<meta property="article:modified_time" content="2020-11-03T10:05:23.359Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2020/11/03/Test-pic/SEO.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Test-pic" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/03/Test-pic/" class="article-date">
+  <time datetime="2020-11-03T09:54:02.000Z" itemprop="datePublished">2020-11-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Markdown 基础语法
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Markdown 基本语法</p>
+<p>##Markdown语法与Markdown编辑器</p>
+<p>Markdown是一种标记语法，这种标记语法需要使用相应的Markdown渲染器（或称为Markdown解析器或Markdown编译器）将Markdown源文件渲染成最终可读的效果（ 类似浏览器引擎将HTML源文件渲染成网页 ）。</p>
+<p>Markdown编辑器就是可以输入Markdown源文件并有相应的Markdown渲染器渲染成最终可读效果的一种工具，一般情况下，Markdown编辑器都具有实时预览的功能（每次输入或修改Markdown源文件都会即时渲染成最终可读效果）。</p>
+<p>##Markdown语法组成结构</p>
+<p>排版主要包括版面格式、段落格式、字符格式三种组成结构，Markdown本身没有版面格式的语法，不过很多markdown编辑工具可以通过CSS进行版面格式设置（比如：ATOM的MPE插件）。</p>
+<p>由于Markdown是一种使用标记语法来定义格式的排版语法，因此，就由格式定义字符来定义格式：</p>
+<p>特殊定符：<br>格式定义字符： 用于定义格式的特殊字符，Markdown的格式定义字符有`、* 、_ 、()、[]、#、+、-、.、!（其他扩展的Markdown渲染器可能有^、~、:等）</p>
+<p>转义字符： 用于转义并显示特殊字符（而不是使用特殊字符来定义格式），Markdown的转义字符是\（在Markdown中并不是出现了特殊字符就必须转义才能显示，而是在特殊字符在定义上下文中才需要显式转义）</p>
+<p>字符格式： 也称为行内格式，用于行内某些字符的格式或行为</p>
+<p>段落格式： 用于一段或多段之间的格式</p>
+<p>内嵌HTML： Markdown可以直接使用内嵌HTML来定义Markdown支持或不支持的结构</p>
+<p>注意：在排版中的段落(Paragraph)和换行(Line Break)是两个不同的概念，换行不一定换段落（在Word里换行即换段落），段落是一个排版元素，同一个段落有共同的段落格式（多个段落也可以使用相同的段落格式），一个段落可以包括多行。段落和多行之间的一个明显差别就是不同的段落之间使用的是段落间距，而多行之间使用的是行间距（一般情况下，段落间距会比行间距大）。</p>
+<p>在最初的Markdown中进行换行需要使用<br/>标签或在行末增加两个或以上的空格，否则中间没有空行（什么都没有或只有空格或TAB符）的两行会显示在一行中（与HTML源文件的渲染效果一样）。而中间有空行的多行即是不同的段落</p>
+<p>在GFM扩展中，不需要使用<br/>标签或在行末增加两个或以上的空格也可以显示为多行，但这多行是同一个段落，只有中间有空行的多行才是不同的段落。</p>
+<p>##Markdown字符格式</p>
+<p>粗体<br>使用**或__（两个下划线字符）包围的字符将被渲染成粗体。</p>
+<p>###粗体的Markdown源文件：</p>
+<p><strong>这是粗体</strong><br><strong>这也是粗体</strong><br>粗体的渲染效果：<br>这是粗体<br>这也是粗体</p>
+<p>斜体<br>使用*或_包围的字符将被渲染成斜体</p>
+<p>斜体的Markdown源文件：</p>
+<p><em>这是斜体</em><br><em>这也是斜体</em><br>斜体的渲染效果：<br>这是斜体<br>这也是斜体</p>
+<p>备注：中文字符一般不使用斜体，因为中文的斜体不怎么好看</p>
+<p>###行内代码<br>使用 ` （键盘中~字符所在的按键）包围的字符将被渲染成行内代码（HTML里的<code>标签）。</p>
+<p>行内代码的Markdown源文件：</p>
+<p>这是<code>行内代码</code><br>行内代码的渲染效果：<br>这是行内代码</p>
+<p>链接<br>Markdown可以使用inline-sytle和reference-style两种方式定义链接。</p>
+<p>inline-style 的语法：<a href="url-link" title="optional-tips">link-text</a>，其中：</p>
+<p>link-text： 显示的 链接文本<br>url-link： url链接<br>optional-tips： 当鼠标放置在link-text上显示的提示<br>reference-style 的语法包括两部分：</p>
+<p><a href="image-url" title="optional-tips">link-text</a><br><a href="image-url" title="optional-tips">reference-id</a>:url-link “optional-tips”： 在同一个文件的其他段落定义<br>链接的Markdown源文件：</p>
+<p>这是<a href="www.baidu.com" title="使用百度进行搜索">百度搜索</a>inline-style</p>
+<p>这是<a href="www.baidu.com" title="使用百度进行搜索">百度搜索</a>reference-style</p>
+<p>链接的渲染效果：<br>这是百度搜索inline-style</p>
+<p>这是百度搜索reference-style</p>
+<p>Markdown段落格式<br>标题<br>Markdown支持两种标题定义方式：</p>
+<p>setext-style： 支持一级和二级标题，通过在单独的一行中定义标题格式，多于一个=字符定义为一级标题、多于一个-字符表示二级标题<br>atx-style： 支持一级至六级标题，通过在标题行前的#字符定义标题，一个#定义一级标题、两个#定义二级标题，以此类推支持最多定义到六级标题<br>setext-style标题的Markdown源文件：</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><p>atx-style的Markdown源文件：</p>
+<h1 id="这是一级标题-1"><a href="#这是一级标题-1" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题-1"><a href="#这是二级标题-1" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h6 id="atx-style支持到六级标题"><a href="#atx-style支持到六级标题" class="headerlink" title="atx-style支持到六级标题"></a>atx-style支持到六级标题</h6><p>建议使用atx-style定义标题，一方面atx-style可以支持至六级标题，另一方面atx-style不需要使用单独一行定义标题格式。</p>
+<p>列表<br>列表的类型<br>列表分为有序列表和无序列表两种基本列表，列表之间可以嵌套（通过增加1个TAB或4个空格的缩进）形成多级列表。</p>
+<p>有序列表<br>使用非负数字+.+一个或以上空格定义有序列表，非负数字不必要从1递增，Markdown在渲染时会从1开始自动递增（当有序列表的第一行是0.时从0开始递增，多级列表的第二级开始不支持从0开始）。</p>
+<p>有序列表的Markdown源文件：</p>
+<ol start="0">
+<li>这是一级有序列表<ol>
+<li>这是二级有序列表<ol>
+<li>这是三级有序列表</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>这是一级有序列表</li>
+<li>这是一级有序列表<br>有序列表的渲染效果：</li>
+</ol>
+<p>这是一级有序列表<br>这是二级有序列表<br>这是三级有序列表<br>这是一级有序列表<br>这是一级有序列表<br>无序列表<br>使用一个*或+或-加上一个以上空格定义无序列表。</p>
+<p>无序列表的Markdown源文件：</p>
+<ul>
+<li>这是无序列表</li>
+</ul>
+<ul>
+<li>这是无序列表</li>
+</ul>
+<ul>
+<li>这是无序列表</li>
+</ul>
+<ul>
+<li>这是一级无序列表<ol>
+<li>这是二级有序列表</li>
+<li>这是二级有序列表</li>
+</ol>
+</li>
+<li>这是一级无序列表<br>无序列表的渲染效果：</li>
+</ul>
+<p>这是无序列表<br>这是无序列表<br>这是无序列表<br>这是一级无序列表<br>这是二级有序列表<br>这是二级有序列表<br>这是一级无序列表<br>引用<br>Markdown使用email-style（&gt;字符）定义引用，引用段落有条竖线展示这是一个引用段落，引用段落可以是多级的。</p>
+<p>引用的Markdown源文件：</p>
+<blockquote>
+<p>这是一级引用</p>
+<blockquote>
+<p>这是二级引用</p>
+<blockquote>
+<p>这是三级引用<br>这还是三级引用<br>这还是三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>新的引用段落</p>
+</blockquote>
+<p>引用的渲染效果：</p>
+<p>这是一级引用</p>
+<p>这是二级引用</p>
+<p>这是三级引用<br>这还是三级引用<br>这还是三级引用</p>
+<p>新的引用段落</p>
+<p>图片<br>Markdown中嵌入图片的语法跟链接的语法类似，差别在于嵌入图片比嵌入链接前多了个!特殊字符表示这是一个指向图片的url。</p>
+<p>图片的Markdown源文件：</p>
+<p>这是一张使用inline-style链接的图片</p>
+<p>[图片上传失败…(image-6ec809-1531624818276)]</p>
+<p><img src="SEO.png" alt="tupian"></p>
+<p>这是一张使用reference-style链接的图片<br><img src="image-url" alt="当图片无法显示时出现这个文本" title="optional-tips"></p>
+<p>图片链接最好放在一个单独的段落中（而不仅仅是不同的行）以便正常显示，因为如果跟文本在同一个段落中，有可能因为行高不够而无法将图片显示完整。</p>
+<p>分隔行<br>在单独的一个段落中使用三个或多于三个*或-或_将被渲染成分隔行。</p>
+<p>代码块<br>被 ``` 包围的段落称为代码块（有些Markdown解释器支持语法高亮）。</p>
+<p>表格<br>Markdown之父 John Gruber 和 Aaron Swartz 发布的Markdown解释器中没有表格格式，目前一般使用的表格格式是GFM的扩展</p>
+<p>表格的Markdown源文件：</p>
+<table>
+<thead>
+<tr>
+<th>表格字段一</th>
+<th align="left">表格字段二</th>
+<th align="right">表格字段三</th>
+<th align="center">表格字段四</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>默认居中对齐</td>
+<td align="left">左对齐</td>
+<td align="right">右对齐</td>
+<td align="center">居中对齐</td>
+</tr>
+<tr>
+<td>cell</td>
+<td align="left">cell</td>
+<td align="right">cell</td>
+<td align="center">cell</td>
+</tr>
+</tbody></table>
+<p>作者：RoamWonder<br>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/62bd8b13eed2">https://www.jianshu.com/p/62bd8b13eed2</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/03/Test-pic/" data-id="ckh1tbpwx0002q5vi7yl8epbv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/10/24/githubtips/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">githubtips</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/github/" style="font-size: 10px;">github</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/11/">November 2010</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/11/03/Test-pic/">Markdown 基础语法</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/24/githubtips/">githubtips</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/24/new-blog1/">new blog1</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/24/push%20rejected/">push rejected</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/24/%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AArepository/">只能通过commit 上传到git？</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
